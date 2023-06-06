@@ -19,14 +19,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </tr>
         </thead>
         <tbody>
-            <% for (Vehicle vehicle : vehicles) { %>
+            <c:forEach items="${vehicles}" var="vehicle">
                 <tr>
-                    <td><%= vehicle.getName() %></td>
-                    <td><%= vehicle.getBrand() %></td>
-                    <td><%= vehicle.getDescription() %></td>
-                    <td><%= vehicle.getPrice() %></td>
+                    <td>${vehicle.name}</td>
+                    <td>${vehicle.brand}</td>
+                    <td>${vehicle.description}</td>
+                    <td>${vehicle.price}</td>
                 </tr>
-            <% } %>
+            </c:forEach>
         </tbody>
     </table>
 </body>
