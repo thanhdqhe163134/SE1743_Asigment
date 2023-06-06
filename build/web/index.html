@@ -5,29 +5,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
 <head>
-    <title>Large Displacement Vehicles</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Large Displacement Vehicles</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Description</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% for (Vehicle vehicle : vehicles) { %>
-                <tr>
-                    <td><%= vehicle.getName() %></td>
-                    <td><%= vehicle.getBrand() %></td>
-                    <td><%= vehicle.getDescription() %></td>
-                    <td><%= vehicle.getPrice() %></td>
-                </tr>
-            <% } %>
-        </tbody>
-    </table>
+    <h1>Welcome to the Bike Store</h1>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Register</a>
 </body>
 </html>
