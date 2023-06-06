@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Large Displacement Vehicles</title>
+</head>
+<body>
+    <h1>Large Displacement Vehicles</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${vehicles}" var="vehicle">
+                <tr>
+                    <td>${vehicle.name}</td>
+                    <td>${vehicle.brand}</td>
+                    <td>${vehicle.description}</td>
+                    <td>${vehicle.price}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+</body>
+</html>
