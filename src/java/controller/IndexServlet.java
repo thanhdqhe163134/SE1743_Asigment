@@ -19,14 +19,14 @@ import dao.BikeDAO;
  *
  * @author faced
  */
-@WebServlet("/index")
 public class IndexServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Lấy danh sách các loại xe từ cơ sở dữ liệu
-        List<Bike> bikeList = BikeDao.getAllBikes();
-
-        // Gửi danh sách xe lên trang index.html để hiển thị
-        request.setAttribute("bikeList", bikeList);
-        request.getRequestDispatcher("index.html").forward(request, response);
+        // Retrieve bike categories from the database using BikeDao
+        List<String> categories = BikeDao.getCategories();
+        
+        // Pass data to the index.html template
+        request.setAttribute("categories", categories);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
+        dispatcher.forward(request, response);
     }
 }

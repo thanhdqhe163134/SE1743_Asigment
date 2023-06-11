@@ -13,8 +13,22 @@ import model.Bike;
  */
 public class BikeDAO {
 
-    public List<Bike> getAllVehicles() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public static List<String> getCategories() {
+        // Retrieve bike categories from the database
+        // Perform SQL query
+        // Return list of categories
+    }
+    
+    public static List<Bike> searchBikesByCategory(String category) {
+        // Retrieve bikes based on category from the database
+        // Perform SQL query
+        // Return list of Bike objects
+    }
+    
+    public static Bike getBikeById(int id) {
+        // Retrieve bike details from the database based on ID
+        // Perform SQL query
+        // Return Bike object
     }
     
 }
