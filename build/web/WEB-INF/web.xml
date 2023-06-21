@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>NewServlet</servlet-name>
-        <servlet-class>NewServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>VehicleServlet</servlet-name>
-        <servlet-class>controller.VehicleServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>IndexServlet</servlet-name>
-        <servlet-class>controller.IndexServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>controller.LoginServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>RegistrationServlet</servlet-name>
-        <servlet-class>controller.RegistrationServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>SearchServlet</servlet-name>
         <servlet-class>controller.SearchServlet</servlet-class>
     </servlet>
@@ -28,34 +8,11 @@
         <servlet-name>BikeDetailsServlet</servlet-name>
         <servlet-class>controller.BikeDetailsServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/NewServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>VehicleServlet</servlet-name>
-        <url-pattern>/VehicleServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>IndexServlet</servlet-name>
-        <url-pattern>/IndexServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RegistrationServlet</servlet-name>
-        <url-pattern>/RegistrationServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SearchServlet</servlet-name>
-        <url-pattern>/SearchServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>BikeDetailsServlet</servlet-name>
-        <url-pattern>/BikeDetailsServlet</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>BigBikeServlet</servlet-name>
+        <servlet-class>controller.BigBikeServlet</servlet-class>
+    </servlet>
+
     <session-config>
         <session-timeout>
             30

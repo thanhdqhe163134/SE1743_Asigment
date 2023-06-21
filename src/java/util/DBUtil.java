@@ -10,9 +10,10 @@ import java.sql.Connection;
  *
  * @author faced
  */
-public class DatabaseUtil {
+public class DBUtil {
+
     public static Connection getConnection() {
-        // Establish a connection to the SQL database
-        // Return Connection object
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
 }
