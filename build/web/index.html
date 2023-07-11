@@ -30,41 +30,305 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesoeet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   </head>
+   <style>
+   .logo {
+      width: 50px;
+      height: auto;
+   }
+
+   body {
+      background-color: #000;
+      color: #fff;
+   }
+
+   .header_section {
+      background-color: #c00;
+   }
+
+   .navbar-light .navbar-toggler {
+      border-color: #fff;
+   }
+
+   .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+   }
+
+   .nav-link,
+   .contact_bt a,
+   .buy_bt a,
+   .read_bt a,
+   .subscribe_bt a {
+      color: #fff;
+   }
+
+   .nav-link:hover,
+   .contact_bt a:hover,
+   .buy_bt a:hover,
+   .read_bt a:hover,
+   .subscribe_bt a:hover {
+      color: #f7c17b;
+   }
+
+   .banner_section {
+      background-color: #c00;
+   }
+
+   .banner_taital,
+   .banner_text {
+      color: #fff;
+   }
+
+   .cycle_section {
+      background-color: #000;
+   }
+
+   .cycle_taital,
+   .cycle_text {
+      color: #fff;
+   }
+
+   .cycles_text,
+   .lorem_text,
+   .buy_bt a,
+   .price_text {
+      color: #fff;
+   }
+
+   .cycles_text {
+      color: #c00;
+   }
+
+   .cycles_text:hover,
+   .buy_bt a:hover,
+   .price_text:hover {
+      color: #f7c17b;
+   }
+
+   .about_section {
+      background-color: #000;
+   }
+
+   .about_taital,
+   .about_text {
+      color: #fff;
+   }
+
+   .client_section {
+      background-color: #000;
+   }
+
+   .client_taital,
+   .client_text,
+   .client_name {
+      color: #fff;
+   }
+
+   .news_section {
+      background-color: #000;
+   }
+
+   .news_taital,
+   .news_text,
+   .speed_text,
+   .post_text,
+   .long_text {
+      color: #fff;
+   }
+
+   .contact_section {
+      background-color: #000;
+   }
+
+   .request_text,
+   .email-bt,
+   .massage-bt,
+   .send_btn a {
+      color: #fff;
+   }
+
+   .footer_section {
+      background-color: #c00;
+   }
+
+   .call_text,
+   .email_text,
+   .subscribe_bt a {
+      color: #fff;
+   }
+
+   .call_text a:hover {
+      color: #f7c17b;
+   }
+
+   .map-responsive iframe {
+      border: 2px solid #fff;
+   }
+
+   .copyright_text {
+      color: #fff;
+   }
+
+   .social_icon li a {
+      color: #fff;
+   }
+
+   .social_icon li a:hover {
+      color: #f7c17b;
+   }
+
+   .banner_section .container .row .col-md-6 {
+      width: 100%;
+      height: 100%;
+   }
+
+   .banner_section .container .row .col-md-6 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   
+   /* Màu chữ cho menu */
+   .navbar-nav .nav-link {
+      color: #000000 !important;
+   }
+
+   /* Màu chữ khi hover trên menu */
+   .navbar-nav .nav-link:hover {
+      color: #000000 !important;
+   }
+</style>
+<style>
+   .navbar {
+      background-color: black;
+   }
+</style>
+
+<style>
+   .contact_bt a {
+      background-color: black;
+   }
+</style>
+<style>
+   .contact_bt {
+      margin-bottom: 20px;
+   }
+</style>
+
+<style>
+   .contact_bt a:hover {
+      color: #000000;
+      background-color: #ffffff;
+   }
+</style>
+<style>
+   .banner_buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+   }
+
+   .detail_button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: inline-block;
+   }
+
+   .carousel_nav {
+      text-align: center;
+   }
+
+   .carousel_prev,
+   .carousel_next {
+      font-size: 24px;
+      color: #000;
+      text-decoration: none;
+      margin-left: 10px;
+   }
+
+   .carousel_prev:hover,
+   .carousel_next:hover {
+      color: #f00;
+   }
+</style>
+<style>
+    .banner_section .container .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_section .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner_section .container .row .col-md-6 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner_section .container .row .col-md-6 .banner_taital {
+    margin-bottom: 20px;
+}
+
+.banner_section .container .row .col-md-6 .banner_text {
+    margin-bottom: 20px;
+}
+
+.banner_section .container .row .col-md-6 .banner_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_section .container .row .col-md-6 .detail_button {
+    margin-top: 20px;
+}
+</style>
+</head>
    <body>
       <!-- header section start -->
       <div class="header_section header_bg">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
             <a href="index.html" class="logo"><img src="images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="cycle.html">Our Cycle</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="shop.html">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="news.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-               </ul>
+   <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         List
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="#">Sport</a>
+         <a class="dropdown-item" href="#">Naked</a>
+         <a class="dropdown-item" href="#">Cruiser</a>
+         <a class="dropdown-item" href="#">Adventure</a>
+         <a class="dropdown-item" href="#">All</a>
+         
+      </div>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="news.html">News</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact Us</a>
+   </li>
+</ul>
+
                <form class="form-inline my-2 my-lg-0">
                   <div class="login_menu">
                      <ul>
                         <li><a href="#">Login</a></li>
-                        <li><a href="#"><img src="images/trolly-icon.png"></a></li>
                         <li><a href="#"><img src="images/search-icon.png"></a></li>
                      </ul>
                   </div>
@@ -75,141 +339,85 @@
                <span style="font-size:36px;cursor:pointer; color: #fff" onclick="openNav()"><img src="images/toggle-icon.png" style="height: 30px;"></span>
             </div>
          </nav>
-         <!-- banner section start -->
-         <div class="banner_section layout_padding">
-            <div id="main_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-7">
-                              <div class="best_text">Best</div>
-                              <div class="image_1"><img src="images/img-1.png"></div>
-                           </div>
-                           <div class="col-md-5">
-                              <h1 class="banner_taital">New Model Cycle</h1>
-                              <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content </p>
-                              <div class="contact_bt"><a href="contact.html">Shop Now</a></div>
-                           </div>
-                        </div>
-                     </div>
+<!-- banner section start -->
+<div class="banner_section layout_padding">
+   <div id="main_slider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+         <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+         <li data-target="#main_slider" data-slide-to="1"></li>
+         <li data-target="#main_slider" data-slide-to="2"></li>
+      </ol>
+      
+      <div class="carousel-inner">
+           
+         <div class="carousel-item active">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-7 order-md-1">
+                     <img src="images/cbr650r.png">
                   </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-7">
-                              <div class="best_text">Best</div>
-                              <div class="image_1"><img src="images/img-1.png"></div>
-                           </div>
-                           <div class="col-md-5">
-                              <h1 class="banner_taital">New Model Cycle</h1>
-                              <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content </p>
-                              <div class="contact_bt"><a href="contact.html">Shop Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-7">
-                              <div class="best_text">Best</div>
-                              <div class="image_1"><img src="images/img-1.png"></div>
-                           </div>
-                           <div class="col-md-5">
-                              <h1 class="banner_taital">New Model Cycle</h1>
-                              <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content </p>
-                              <div class="contact_bt"><a href="contact.html">Shop Now</a></div>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="col-md-5 order-md-2">
+                     <h1 class="banner_taital">CBR650R</h1>
+                     <p class="banner_text">CBR650R - the powerful "warhorse" refined to become a champion in every journey. With its sleek and aerodynamic design, racing-inspired aesthetics, and concentrated engine power in the mid-range RPM, it delivers perfect acceleration capabilities. The CBR650R will provide you with exhilarating speed experiences, igniting the championship-winning force within you, whether you're on the street or the racetrack. </p>
+                     <div class="contact_bt"><a href="contact.html">Detail</a></div>
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-angle-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-angle-right"></i>
-               </a>
             </div>
          </div>
-         <!-- banner section end -->
-      </div>
-      <!-- header section end -->
-      <!-- cycle section start -->
-      <div class="cycle_section layout_padding">
-         <div class="container">
-            <h1 class="cycle_taital">Our cycle</h1>
-            <p class="cycle_text">It is a long established fact that a reader will be distracted by the </p>
-            <div class="cycle_section_2 layout_padding">
+
+         <div class="carousel-item">
+            <div class="container">
                <div class="row">
-                  <div class="col-md-6">
-                     <div class="box_main">
-                        <h6 class="number_text">01</h6>
-                        <div class="image_2"><img src="images/img-2.png"></div>
-                     </div>
+                  <div class="col-md-7 order-md-1">
+                     <img src="images/cb650r.png">
                   </div>
-                  <div class="col-md-6">
-                     <h1 class="cycles_text">Cycles</h1>
-                     <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                     <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <h4 class="price_text">Price <span style=" color: #f7c17b">$</span> <span style=" color: #325662">200</span></h4>
-                     </div>
+                  <div class="col-md-5 order-md-2">
+                     <h1 class="banner_taital">CB650R</h1>
+                     <p class="banner_text">CB650R is an elegant and powerful street warrior designed to fulfill the boldness of dynamic riders in urban environments. With its sleek exterior and a powerful 650cc engine, it combines strong street performance with a classic, rugged style. It becomes a reliable ally, allowing you to experience thrilling adventures and embrace the freedom of the open road, making your daily journeys far from ordinary.</p>
+                     <div class="contact_bt"><a href="contact.html">Detail</a></div>
                   </div>
                </div>
-            </div>
-            <div class="cycle_section_3 layout_padding">
-               <div class="row">
-                  <div class="col-md-6">
-                     <h1 class="cycles_text">Stylis Cycle</h1>
-                     <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                     <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <h4 class="price_text">Price <span style=" color: #f7c17b">$</span> <span style=" color: #325662">200</span></h4>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="box_main_3">
-                        <h6 class="number_text_2">02</h6>
-                        <div class="image_2"><img src="images/img-3.png"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="cycle_section_2 layout_padding">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="box_main_3">
-                        <h6 class="number_text_2">03</h6>
-                        <div class="image_2"><img src="images/img-4.png"></div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <h1 class="cycles_text">Mordern <br>Cycle</h1>
-                     <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                     <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <h4 class="price_text">Price <span style=" color: #f7c17b">$</span> <span style=" color: #325662">200</span></h4>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="read_btn_main">
-               <div class="read_bt"><a href="#">Read More</a></div>
             </div>
          </div>
+             
+             <div class="carousel-item">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-7 order-md-1">
+                     <img src="images/cbr1000rrr.png">
+                  </div>
+                  <div class="col-md-5 order-md-2">
+                     <h1 class="banner_taital">CBR1000RRR</h1>
+                     <p class="banner_text">THE RACETRACK IS YOUR PLAYGROUND. Where you truly live with the passion, the CBR1000RR-R Fireblade SP is equipped with the 2nd generation Smart Electronic Control (S-EC) suspension system and Brembo Stylema brake calipers on the front. With exceptional performance capabilities, the CBR1000RR-R Fireblade SP is Honda's most precious gift to speed enthusiasts. ENJOY IT!!!</p>
+                     <div class="contact_bt"><a href="contact.html">Detail</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+
+        
       </div>
-      <!-- cycle section end -->
+
+      <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+      </a>
+   </div>
+</div>
+<!-- banner section end -->
+      
       <!-- about section start -->
       <div class="about_section layout_padding">
          <div class="container">
-            <h1 class="about_taital">About Our cycle Store</h1>
-            <p class="about_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+            <h1 class="about_taital">About Our Motorcycle Store</h1>
+            <p class="about_text">Welcome to our motorcycle store, where we offer a diverse range of high-quality products to meet your transportation needs.
             </p>
-            <div class="about_main">
-               <img src="images/img-5.png" class="image_5">
-            </div>
+            
             <div class="read_bt_1"><a href="#">Read More</a></div>
          </div>
       </div>
@@ -228,7 +436,7 @@
                            </div>
                            <div class="client_right">
                               <div class="quote_icon"><img src="images/quote-icon.png"></div>
-                              <p class="client_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                              <p class="client_text"></p>
                               <h3 class="client_name">Channery</h3>
                            </div>
                         </div>

@@ -221,7 +221,6 @@ button {
 
 .header_section::after {
     content: '';
-    background-color: #ffffff;
     position: absolute;
     width: 420px;
     right: initial;
