@@ -12,29 +12,29 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
-import models.BigBike;
-import models.BigBikeDAO;
+import models.Bike;
+import models.BikeDAO;
 
 
 /**
  *
  * @author faced
  */
-@WebServlet(name = "BigBikeServlet", urlPatterns = {"/bigbikes"})
+@WebServlet(name = "BikeServlet", urlPatterns = {"/bikes"})
 public class BigBikeServlet extends HttpServlet {
-    private BigBikeDAO bigBikeDAO;
+    private BikeDAO BikeDAO;
 
     @Override
     public void init() throws ServletException {
         super.init();
-        bigBikeDAO = new BigBikeDAO();
+        BikeDAO = new BikeDAO();
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<BigBike> bigBikeList = bigBikeDAO.getAllBigBike();
-        request.setAttribute("bigBikes", bigBikeList);
-        request.getRequestDispatcher("bigbike-list.jsp").forward(request, response);
+        List<Bike> BikeList = BikeDAO.getAllBike();
+        request.setAttribute("Bike", BikeList);
+        request.getRequestDispatcher("bike-list.jsp").forward(request, response);
     }
 
     // Các phương thức khác theo yêu cầu của ứng dụng
