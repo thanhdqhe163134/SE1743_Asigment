@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/src/java/util/DBUtil.java</file>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/src/java/models/Bike.java</file>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/web/index.html</file>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/src/java/models/BikeDAO.java</file>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/web/Bike.jsp</file>
+            <file>file:/C:/Users/faced/Documents/PRJ301/Assigment/SE1743_Asigment/src/java/controller/BikeServlet.java</file>
+        </group>
     </open-files>
 </project-private>

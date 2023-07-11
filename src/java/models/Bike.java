@@ -9,17 +9,16 @@ package models;
  * @author faced
  */
 public class Bike {
-    private int ID;
-    private String Name;
-    private String Type;
-    private String Engine;
-    private String Technique;
-    private String Description;
-    private String IMG;
-    private Double Price;
+    public int ID;
+    public String Name;
+    public String Type;
+    public String Engine;
+    public String Technique;
+    public String Description;
+    public String IMG;
+    public Double Price;
 
     public Bike() {
-        // Constructor mặc định
     }
 
     public Bike(int ID, String Name, String Type, String Engine, String Technique,String Description, String IMG, Double Price) {
